@@ -1402,6 +1402,7 @@ MonoBehaviour:
   _agent: {fileID: 8149962849788695260}
   _targets:
   - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1136997663316994215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1415,7 +1416,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 9172045926504907889, guid: 4e6c4f15012246b448efa4a69bf19a1f, type: 3}
-  _firePoint: {fileID: 9122798156051474340}
   _force: 10
   _forceMode: 1
   _attackSpeed: 2
@@ -1431,6 +1431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd3242f5e95e5bc43b02460e69e4ce02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _firePoint: {fileID: 0}
 --- !u!195 &8149962849788695260
 NavMeshAgent:
   m_ObjectHideFlags: 0
