@@ -4,18 +4,30 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    private Bullet _bulletPrefab;
+    private IAttackStrategy _attackStrategy;
+    [SerializeField] public Transform _firePoint;
+    private Player _playerStats;
 
     private void Start()
     {
-        _bulletPrefab = GetComponent<Bullet>();
+        _attackStrategy = GetComponent<BulletFire>();
+        _playerStats = GetComponent<Player>();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        if (_bulletPrefab.BulletObj == null)
+        _attackStrategy?.Attack();
+        if (_playerStats._expPlayer == 20)
         {
-            _bulletPrefab.Cast();
+            _playerStats._playerLvl = 1;
+            if (_playerStats._playerLvl >= 1)
+            {
+                ChangeAttackStrategy(GetComponent<BulletIce>());
+            }
         }
+    }
+    public void ChangeAttackStrategy(IAttackStrategy newStrategy)
+    {
+        _attackStrategy = newStrategy;
     }
 }

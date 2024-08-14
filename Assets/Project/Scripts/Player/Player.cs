@@ -1,18 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] public int _expPlayer = 0;
+    [SerializeField] public int _playerLvl = 0;
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        
+        if(_expPlayer == 20)
+        {
+            _playerLvl = 1;
+            if(_playerLvl >= 1)
+            {
+                
+            }
+        }
+        if(_expPlayer == 30)
+        {
+            _playerLvl = 2;
+            if(_playerLvl == 2)
+            {
+               
+            }
+        }
     }
 }

@@ -4939,8 +4939,9 @@ GameObject:
   - component: {fileID: 2913427692528127558}
   - component: {fileID: 7083878961862335653}
   - component: {fileID: 7154183468246759720}
+  - component: {fileID: -2683509238798389145}
   m_Layer: 0
-  m_Name: BulletPrefab
+  m_Name: FireBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5173,3 +5174,19 @@ TrailRenderer:
   m_Autodestruct: 1
   m_Emitting: 1
   m_ApplyActiveColorSpace: 0
+--- !u!114 &-2683509238798389145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9172045926504907889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3bb850c7db178d4e9b7ca64c03032f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletPrefab: {fileID: 9172045926504907889}
+  _force: 10
+  _forceMode: 1
+  _attackSpeed: 2

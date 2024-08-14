@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TargetAttack : MonoBehaviour
 {
     private Bullet bulletPrefab;
+    [SerializeField] private Transform _firePoint;
 
     private void Start()
     {
@@ -15,7 +14,7 @@ public class TargetAttack : MonoBehaviour
     {
         if (bulletPrefab.BulletObj == null)
         {
-            bulletPrefab.Cast();
+            bulletPrefab.Cast(_firePoint);
         }
     }
 }
