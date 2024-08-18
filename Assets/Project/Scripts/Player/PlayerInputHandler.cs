@@ -9,16 +9,26 @@ public class PlayerInputHandler : MonoBehaviour
 
     private PlayerInput _playerInput;
     private InputAction _moveAction;
+    private PlayerForce _forceStart;
 
     private void Start()
     {
         _playerInput = GetComponent<PlayerInput>();
         _moveAction = _playerInput.actions.FindAction("Move");
+        _forceStart = GetComponent<PlayerForce>();
     }
 
     private void Update()
     {
         MovementInput = _moveAction.ReadValue<Vector2>();
+        ForceAbillityCheck();
     }
 
+    private void ForceAbillityCheck()
+    {
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            StartCoroutine(_forceStart.ForceAbillity());
+        }
+    }
 }

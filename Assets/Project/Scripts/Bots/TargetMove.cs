@@ -6,6 +6,8 @@ public class TargetMove : MonoBehaviour
     [SerializeField] private PlayerMovement _player;
     [SerializeField] private NavMeshAgent _agent;
     [SerializeField] private GameObject[] _targets;
+    private float _nextUpdate;
+    private float _updateRate = 1f;
 
     private void Start()
     {
@@ -14,39 +16,48 @@ public class TargetMove : MonoBehaviour
 
     private void Update()
     {
-        MoveToPlayer();
+        if (Time.time >= _nextUpdate)
+        {
+            _nextUpdate = Time.time + _updateRate;
+
+            var distanceToPlayer = Vector3.Distance(_player.transform.position, _agent.transform.position);
+
+            if (distanceToPlayer > 15)
+            {
+                MoveToNearestTarget();
+            }
+            else
+            {
+                MoveToPosition(_player.transform.position);
+            }
+        }
     }
 
-    private void MoveToPlayer()
+    private void MoveToNearestTarget()
     {
-        var distanceToPlayer = Vector3.Distance(_player.transform.position, _agent.transform.position);
         Transform nearestTarget = null;
         float nearestTargetDistance = float.MaxValue;
 
-        if (distanceToPlayer > 15)
+        foreach (var target in _targets)
         {
-            foreach (var target in _targets)
+            var distanceToTarget = Vector3.Distance(_agent.transform.position, target.transform.position);
+            if (distanceToTarget < nearestTargetDistance)
             {
-                var distanceToTarget = Vector3.Distance(_agent.transform.position, target.transform.position);
-                if (distanceToTarget < nearestTargetDistance)
-                {
-                    nearestTargetDistance = distanceToTarget;
-                    nearestTarget = target.transform;
-                }
+                nearestTargetDistance = distanceToTarget;
+                nearestTarget = target.transform;
             }
+        }
 
-            if (nearestTarget != null)
-            {
-                _agent.destination = nearestTarget.position;
-                Vector3 directionToTarget = nearestTarget.position - _agent.transform.position;
-                _agent.transform.rotation = Quaternion.LookRotation(directionToTarget);
-            }
-        }
-        else
+        if (nearestTarget != null)
         {
-            _agent.destination = _player.transform.position;
-            Vector3 directionToPlayer = _player.transform.position - _agent.transform.position;
-            _agent.transform.rotation = Quaternion.LookRotation(directionToPlayer);
+            MoveToPosition(nearestTarget.position);
         }
+    }
+
+    private void MoveToPosition(Vector3 position)
+    {
+        _agent.destination = position;
+        Vector3 direction = position - _agent.transform.position;
+        _agent.transform.rotation = Quaternion.LookRotation(direction);
     }
 }

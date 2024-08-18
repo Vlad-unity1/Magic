@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BulletFire : MonoBehaviour, IAttackStrategy
 {
-    [SerializeField] Bullet _bulletPrefab;
+    [SerializeField] BulletSpawner _bulletPrefab;
     [SerializeField] private Transform _firePoint;
     public void Attack()
     {

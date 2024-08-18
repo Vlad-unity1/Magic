@@ -16,7 +16,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        _attackStrategy?.Attack();
+        _attackStrategy.Attack();
         if (_playerStats._expPlayer == 20)
         {
             _playerStats._playerLvl = 1;

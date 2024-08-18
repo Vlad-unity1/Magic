@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class BulletSpawner : MonoBehaviour
 {
-    public GameObject BulletObj { get; private set; }
+    public GameObject BulletObj;
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private float _force;
     [SerializeField] private ForceMode _forceMode;
