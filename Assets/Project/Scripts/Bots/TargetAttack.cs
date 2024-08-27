@@ -10,8 +10,5 @@ public class TargetAttack : MonoBehaviour
         _bulletPrefab = GetComponent<BulletSpawner>();
     }
 
-    private void FixedUpdate()
-    {
-        _bulletPrefab.Cast(_firePoint);
-    }
+   
 }
