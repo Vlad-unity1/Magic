@@ -10,19 +10,19 @@ public class PlayerAttack : MonoBehaviour
 
     private void Start()
     {
-        _attackStrategy = GetComponent<BulletFire>();
+      //  _attackStrategy = GetComponent<BulletFire>();
         _playerStats = GetComponent<Player>();
     }
 
     private void Update()
     {
-        _attackStrategy.Attack();
+        //_attackStrategy.Attack();
         if (_playerStats._expPlayer == 20)
         {
             _playerStats._playerLvl = 1;
             if (_playerStats._playerLvl >= 1)
             {
-                ChangeAttackStrategy(GetComponent<BulletIce>());
+               // ChangeAttackStrategy(GetComponent<BulletIce>());
             }
         }
     }

@@ -2,19 +2,16 @@ using UnityEngine;
 
 public class TargetAttack : MonoBehaviour
 {
-    private BulletSpawner bulletPrefab;
+    private BulletSpawner _bulletPrefab;
     [SerializeField] private Transform _firePoint;
 
     private void Start()
     {
-        bulletPrefab = GetComponent<BulletSpawner>();
+        _bulletPrefab = GetComponent<BulletSpawner>();
     }
 
     private void FixedUpdate()
     {
-        if (bulletPrefab.BulletObj == null)
-        {
-            bulletPrefab.Cast(_firePoint);
-        }
+        _bulletPrefab.Cast(_firePoint);
     }
 }

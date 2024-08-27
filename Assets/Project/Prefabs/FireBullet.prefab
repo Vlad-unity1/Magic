@@ -4939,7 +4939,7 @@ GameObject:
   - component: {fileID: 2913427692528127558}
   - component: {fileID: 7083878961862335653}
   - component: {fileID: 7154183468246759720}
-  - component: {fileID: -2683509238798389145}
+  - component: {fileID: 5593546636959697706}
   m_Layer: 0
   m_Name: FireBullet
   m_TagString: Untagged
@@ -5174,7 +5174,7 @@ TrailRenderer:
   m_Autodestruct: 1
   m_Emitting: 1
   m_ApplyActiveColorSpace: 0
---- !u!114 &-2683509238798389145
+--- !u!114 &5593546636959697706
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5183,10 +5183,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 9172045926504907889}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3bb850c7db178d4e9b7ca64c03032f8, type: 3}
+  m_Script: {fileID: 11500000, guid: 21423b44bade2fd4d85fa30f55a55851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bulletPrefab: {fileID: 9172045926504907889}
-  _force: 10
-  _forceMode: 1
-  _attackSpeed: 2
+  _fireDamage: 10
+  _fireTimerLive: 5

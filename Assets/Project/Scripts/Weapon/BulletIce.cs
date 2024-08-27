@@ -1,14 +1,20 @@
+using System.Collections;
 using UnityEngine;
 
-public class BulletIce : MonoBehaviour, IAttackStrategy
+public class BulletIce : Bullet
 {
-    [SerializeField] BulletSpawner _bulletPrefab;
-    [SerializeField] private Transform _firePoint;
-    public void Attack()
+    [SerializeField] private float _iceDamage = 20f;
+    [SerializeField] private float _iceTimerLive = 2f;
+
+    protected override void OnEnable()
     {
-        if (_bulletPrefab.BulletObj == null)
-        {
-            _bulletPrefab.Cast(_firePoint);
-        }
+        SetProperties();
+        base.OnEnable();
+    }
+
+    protected override void SetProperties()
+    {
+        _damage = _iceDamage;
+        _timerLive = _iceTimerLive;
     }
 }
