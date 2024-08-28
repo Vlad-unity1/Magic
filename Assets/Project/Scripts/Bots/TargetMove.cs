@@ -40,6 +40,8 @@ public class TargetMove : MonoBehaviour
 
         foreach (var target in _targets)
         {
+            if (target == null) continue;
+
             var distanceToTarget = Vector3.Distance(_agent.transform.position, target.transform.position);
             if (distanceToTarget < nearestTargetDistance)
             {

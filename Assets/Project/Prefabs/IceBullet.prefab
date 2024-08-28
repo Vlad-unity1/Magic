@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6817427685754945044}
   - component: {fileID: 4807051039738581282}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 7591239079395131460}
   - component: {fileID: 5457225439614136898}
   - component: {fileID: 714660740647462513}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4940,7 +4940,8 @@ GameObject:
   - component: {fileID: 7083878961862335653}
   - component: {fileID: 7154183468246759720}
   - component: {fileID: -1388453842970455171}
-  m_Layer: 0
+  - component: {fileID: -5404873708330521780}
+  m_Layer: 6
   m_Name: IceBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5188,5 +5189,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 9172045926504907889}
   _force: 10
-  _forceMode: 1
-  _attackSpeed: 2
+--- !u!114 &-5404873708330521780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9172045926504907889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fd704e36cee1884abece5a3967f889e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _iceDamage: 20
+  _iceTimerLive: 2
+  _bulletPrefab: {fileID: 9172045926504907889}

@@ -131,9 +131,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7979211}
     m_Modifications:
+    - target: {fileID: 1041988229099548, guid: 0cd6ff090b1f6b94eb7296a8ccde7df0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251197940393324, guid: 0cd6ff090b1f6b94eb7296a8ccde7df0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1680469851958486, guid: 0cd6ff090b1f6b94eb7296a8ccde7df0, type: 3}
       propertyPath: m_Name
       value: EA04_Prop_Barrel_01a_PRE (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1680469851958486, guid: 0cd6ff090b1f6b94eb7296a8ccde7df0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753489691111208, guid: 0cd6ff090b1f6b94eb7296a8ccde7df0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4560320666224368, guid: 0cd6ff090b1f6b94eb7296a8ccde7df0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -293,9 +309,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7979211}
     m_Modifications:
+    - target: {fileID: 1148466472673974, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339079742259344, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_Dry_01a_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804274111605116, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4094916363087742, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_LocalPosition.x
@@ -358,9 +390,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7979211}
     m_Modifications:
+    - target: {fileID: 1148466472673974, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339079742259344, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_Dry_01a_PRE (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804274111605116, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4094916363087742, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_LocalPosition.x
@@ -510,9 +558,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7979211}
     m_Modifications:
+    - target: {fileID: 1376435854783964, guid: f2f6ac5be7a19fd4dad342615b55e2a7, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791619327612918, guid: f2f6ac5be7a19fd4dad342615b55e2a7, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1860593702199430, guid: f2f6ac5be7a19fd4dad342615b55e2a7, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1930786075069372, guid: f2f6ac5be7a19fd4dad342615b55e2a7, type: 3}
       propertyPath: m_Name
       value: EA04_Prop_Pole_01a.001_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930786075069372, guid: f2f6ac5be7a19fd4dad342615b55e2a7, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4532970918211320, guid: f2f6ac5be7a19fd4dad342615b55e2a7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -718,6 +782,22 @@ PrefabInstance:
     - target: {fileID: 1400938507355842, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Cactus_01a_PRE (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400938507355842, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460970260015776, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656406261572836, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1737827264178654, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4460545689578954, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1185,6 +1265,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA04_Env_Plants_Cactus_01a_PRE (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1400938507355842, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460970260015776, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656406261572836, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1737827264178654, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4460545689578954, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.21
@@ -1367,9 +1463,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7979211}
     m_Modifications:
+    - target: {fileID: 1009980553106548, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487344533664302, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1763083464843644, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Cactus_01b_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763083464843644, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968697344532898, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4968731308970936, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1451,6 +1563,14 @@ PrefabInstance:
       propertyPath: _firePoint
       value: 
       objectReference: {fileID: 1498750434}
+    - target: {fileID: 2054118444470295015, guid: f07dbdc0c372c1a419c358460933cfc1, type: 3}
+      propertyPath: m_Radius
+      value: 0.52957916
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054118444470295015, guid: f07dbdc0c372c1a419c358460933cfc1, type: 3}
+      propertyPath: m_Center.z
+      value: 0.044808388
+      objectReference: {fileID: 0}
     - target: {fileID: 4509539057587510296, guid: f07dbdc0c372c1a419c358460933cfc1, type: 3}
       propertyPath: m_Name
       value: Bot 3
@@ -1545,6 +1665,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA04_Env_Stone_Gray_01a_PRE (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1141340598672658, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417588076933562, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1443992906126098, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883144199267476, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4573444360151208, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.16
@@ -1609,6 +1745,22 @@ PrefabInstance:
     - target: {fileID: 1400938507355842, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Cactus_01a_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400938507355842, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460970260015776, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656406261572836, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1737827264178654, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4460545689578954, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2012,9 +2164,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7979211}
     m_Modifications:
+    - target: {fileID: 1195313539225094, guid: c8b87b63bab77404d951cbaa39e740bd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1350152387528398, guid: c8b87b63bab77404d951cbaa39e740bd, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Tree_Root_01a_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350152387528398, guid: c8b87b63bab77404d951cbaa39e740bd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1846627496308856, guid: c8b87b63bab77404d951cbaa39e740bd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859705571098934, guid: c8b87b63bab77404d951cbaa39e740bd, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4668812952752714, guid: c8b87b63bab77404d951cbaa39e740bd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2229,6 +2397,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA04_Prop_Oar_01a_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 1023276969718232, guid: 65da2f4fc901c2a4eb08794871c5cd2d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1326986664967488, guid: 65da2f4fc901c2a4eb08794871c5cd2d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1550329583882698, guid: 65da2f4fc901c2a4eb08794871c5cd2d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647106313001924, guid: 65da2f4fc901c2a4eb08794871c5cd2d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4768380998318238, guid: 65da2f4fc901c2a4eb08794871c5cd2d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.7975736
@@ -2290,9 +2474,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7979211}
     m_Modifications:
+    - target: {fileID: 1009980553106548, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487344533664302, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1763083464843644, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Cactus_01b_PRE (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763083464843644, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968697344532898, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4968731308970936, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2583,9 +2783,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7979211}
     m_Modifications:
+    - target: {fileID: 1337038700853682, guid: d68f793b815ef6148b905e872770773d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1361429800275714, guid: d68f793b815ef6148b905e872770773d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1660746287522244, guid: d68f793b815ef6148b905e872770773d, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Tree_Trunk_01f_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660746287522244, guid: d68f793b815ef6148b905e872770773d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937038418258766, guid: d68f793b815ef6148b905e872770773d, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4743664221086028, guid: d68f793b815ef6148b905e872770773d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2670,9 +2886,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7979211}
     m_Modifications:
+    - target: {fileID: 1151092556611182, guid: d5fe580a44fb9954596136332fa54ebb, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1275142658434920, guid: d5fe580a44fb9954596136332fa54ebb, type: 3}
       propertyPath: m_Name
       value: EA04_Prop_Skull_01a_PRE (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275142658434920, guid: d5fe580a44fb9954596136332fa54ebb, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487915573259556, guid: d5fe580a44fb9954596136332fa54ebb, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1847359315419158, guid: d5fe580a44fb9954596136332fa54ebb, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4782387158447624, guid: d5fe580a44fb9954596136332fa54ebb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3063,6 +3295,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA04_Prop_Flag_01a_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 1298022226666226, guid: a10ec3c65771e174a8fef152ce83dbf7, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1318106669120198, guid: a10ec3c65771e174a8fef152ce83dbf7, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552532473164848, guid: a10ec3c65771e174a8fef152ce83dbf7, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1684177569458402, guid: a10ec3c65771e174a8fef152ce83dbf7, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4985766018137316, guid: a10ec3c65771e174a8fef152ce83dbf7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.8575873
@@ -3406,6 +3654,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA04_Prop_cauldron_01a_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 1102710312700288, guid: 59dbe1ffa44fb2b419b71ba1f408f7de, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322911335720252, guid: 59dbe1ffa44fb2b419b71ba1f408f7de, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1910585815148340, guid: 59dbe1ffa44fb2b419b71ba1f408f7de, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998201623010218, guid: 59dbe1ffa44fb2b419b71ba1f408f7de, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4749039366320320, guid: 59dbe1ffa44fb2b419b71ba1f408f7de, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.6124773
@@ -3521,9 +3785,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7979211}
     m_Modifications:
+    - target: {fileID: 1087153028830700, guid: f268d1b0ffb8c1e488d1e714d442ae27, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1182857084905056, guid: f268d1b0ffb8c1e488d1e714d442ae27, type: 3}
       propertyPath: m_Name
       value: EA_04_Trunk_and_stone_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182857084905056, guid: f268d1b0ffb8c1e488d1e714d442ae27, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253458803922378, guid: f268d1b0ffb8c1e488d1e714d442ae27, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451317376656722, guid: f268d1b0ffb8c1e488d1e714d442ae27, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536358377079792, guid: f268d1b0ffb8c1e488d1e714d442ae27, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569834190346290, guid: f268d1b0ffb8c1e488d1e714d442ae27, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708440631694822, guid: f268d1b0ffb8c1e488d1e714d442ae27, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724687510699656, guid: f268d1b0ffb8c1e488d1e714d442ae27, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1917512717022402, guid: f268d1b0ffb8c1e488d1e714d442ae27, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4921617046358666, guid: f268d1b0ffb8c1e488d1e714d442ae27, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3586,9 +3886,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7979211}
     m_Modifications:
+    - target: {fileID: 1675774443200630, guid: eded41f323e33a34b96ef4fa1091be67, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731531564218678, guid: eded41f323e33a34b96ef4fa1091be67, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821813410517886, guid: eded41f323e33a34b96ef4fa1091be67, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1824554533181622, guid: eded41f323e33a34b96ef4fa1091be67, type: 3}
       propertyPath: m_Name
       value: EA04_Wooden_Pole_Color_01a_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824554533181622, guid: eded41f323e33a34b96ef4fa1091be67, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4359140608182706, guid: eded41f323e33a34b96ef4fa1091be67, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3943,6 +4259,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA04_Env_Stone_Gray_01a_PRE (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1141340598672658, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417588076933562, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1443992906126098, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883144199267476, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4573444360151208, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.13
@@ -4231,9 +4563,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7979211}
     m_Modifications:
+    - target: {fileID: 1091771422121156, guid: 741deaeacca15e749b9560cb27a5af29, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1380520181036076, guid: 741deaeacca15e749b9560cb27a5af29, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_Dry_01b_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380520181036076, guid: 741deaeacca15e749b9560cb27a5af29, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855096698514286, guid: 741deaeacca15e749b9560cb27a5af29, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961460529191704, guid: 741deaeacca15e749b9560cb27a5af29, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4988941463352562, guid: 741deaeacca15e749b9560cb27a5af29, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4321,6 +4669,22 @@ PrefabInstance:
     - target: {fileID: 1400938507355842, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Cactus_01a_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400938507355842, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460970260015776, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656406261572836, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1737827264178654, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4460545689578954, guid: e6dfc33500f045d48a278519738f5d42, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4439,6 +4803,22 @@ PrefabInstance:
     - target: {fileID: 1141340598672658, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Stone_Gray_01a_PRE (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141340598672658, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417588076933562, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1443992906126098, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883144199267476, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4573444360151208, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4560,9 +4940,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7979211}
     m_Modifications:
+    - target: {fileID: 1151092556611182, guid: d5fe580a44fb9954596136332fa54ebb, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1275142658434920, guid: d5fe580a44fb9954596136332fa54ebb, type: 3}
       propertyPath: m_Name
       value: EA04_Prop_Skull_01a_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275142658434920, guid: d5fe580a44fb9954596136332fa54ebb, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487915573259556, guid: d5fe580a44fb9954596136332fa54ebb, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1847359315419158, guid: d5fe580a44fb9954596136332fa54ebb, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4782387158447624, guid: d5fe580a44fb9954596136332fa54ebb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4717,9 +5113,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7979211}
     m_Modifications:
+    - target: {fileID: 1103116713291352, guid: d34499157cceccb44b1f7d491dc1c81e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168181633759968, guid: d34499157cceccb44b1f7d491dc1c81e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1530833501958640, guid: d34499157cceccb44b1f7d491dc1c81e, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Tree_Trunk_01a_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530833501958640, guid: d34499157cceccb44b1f7d491dc1c81e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616040150738518, guid: d34499157cceccb44b1f7d491dc1c81e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4454973464541134, guid: d34499157cceccb44b1f7d491dc1c81e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4885,9 +5297,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7979211}
     m_Modifications:
+    - target: {fileID: 1009980553106548, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487344533664302, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1763083464843644, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Cactus_01b_PRE (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763083464843644, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968697344532898, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4968731308970936, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5004,9 +5432,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7979211}
     m_Modifications:
+    - target: {fileID: 1009980553106548, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487344533664302, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1763083464843644, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Cactus_01b_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763083464843644, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968697344532898, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4968731308970936, guid: f9a96b9a70de8214f9184755b87f1fd1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5205,9 +5649,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7979211}
     m_Modifications:
+    - target: {fileID: 1000517574402004, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1353057868215524, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1803532657506402, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_01b_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1803532657506402, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950603029380038, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4439677966222154, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5349,6 +5809,22 @@ PrefabInstance:
     - target: {fileID: 1141340598672658, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Stone_Gray_01a_PRE (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141340598672658, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417588076933562, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1443992906126098, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883144199267476, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4573444360151208, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5766,7 +6242,7 @@ GameObject:
   - component: {fileID: 2086744941}
   - component: {fileID: 2086744940}
   - component: {fileID: 2086744939}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SpawnCrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5886,6 +6362,22 @@ PrefabInstance:
     - target: {fileID: 1141340598672658, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Stone_Gray_01a_PRE (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141340598672658, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417588076933562, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1443992906126098, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883144199267476, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4573444360151208, guid: 270b158d0a9b9804cb6a7f9492cdfae5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6108,6 +6600,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 967097951266559, guid: fc1b25086acc6364099a88eb9e9803c4, type: 3}
   m_PrefabInstance: {fileID: 1737802759127217324}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1248814638026887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248814638026886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3eca02aee3e0f44f89f9a3f11dbe021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 10
 --- !u!1 &1248815268154619 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4509539057587510296, guid: f07dbdc0c372c1a419c358460933cfc1, type: 3}
@@ -6740,6 +7245,14 @@ PrefabInstance:
       propertyPath: _targets.Array.data[1]
       value: 
       objectReference: {fileID: 1892479108}
+    - target: {fileID: 7512457864396534174, guid: fc1b25086acc6364099a88eb9e9803c4, type: 3}
+      propertyPath: m_Radius
+      value: 0.5533333
+      objectReference: {fileID: 0}
+    - target: {fileID: 7512457864396534174, guid: fc1b25086acc6364099a88eb9e9803c4, type: 3}
+      propertyPath: m_Center.z
+      value: -0.038784027
+      objectReference: {fileID: 0}
     - target: {fileID: 9106475777885185484, guid: fc1b25086acc6364099a88eb9e9803c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.9
@@ -6783,7 +7296,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 967097951266559, guid: fc1b25086acc6364099a88eb9e9803c4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1248814638026887}
   m_SourcePrefab: {fileID: 100100000, guid: fc1b25086acc6364099a88eb9e9803c4, type: 3}
 --- !u!4 &1743526749415265731
 Transform:
@@ -8340,6 +8856,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2054118444470295015, guid: f07dbdc0c372c1a419c358460933cfc1, type: 3}
+      propertyPath: m_Radius
+      value: 0.5382409
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054118444470295015, guid: f07dbdc0c372c1a419c358460933cfc1, type: 3}
+      propertyPath: m_Center.z
+      value: 0.04731798
+      objectReference: {fileID: 0}
     - target: {fileID: 4509539057587510296, guid: f07dbdc0c372c1a419c358460933cfc1, type: 3}
       propertyPath: m_Name
       value: Bot 2

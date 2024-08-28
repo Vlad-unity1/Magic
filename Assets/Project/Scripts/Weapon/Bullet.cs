@@ -12,13 +12,6 @@ public abstract class Bullet : MonoBehaviour
         StartCoroutine(DestroyDelayed());
     }
 
-    //private void OnTriggerEnter(Collider collision)
-    //{
-    //    TargetTakeDamage target = collision.GetComponent<TargetTakeDamage>();
-    //        target.TakeDamage(_damage);
-    //        Destroy(gameObject);
-    //}
-
     private IEnumerator DestroyDelayed()
     {
         yield return new WaitForSeconds(_timerLive);
