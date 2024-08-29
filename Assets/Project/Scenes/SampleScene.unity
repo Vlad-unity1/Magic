@@ -6666,6 +6666,7 @@ GameObject:
   - component: {fileID: 2318472871869569729}
   - component: {fileID: 657765491447519400}
   - component: {fileID: 9191928917036377065}
+  - component: {fileID: 9191928917036377066}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -6784,6 +6785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerLvl: 0
+  _expPlayer: 0
 --- !u!1 &672431952355470658
 GameObject:
   m_ObjectHideFlags: 0
@@ -7766,10 +7768,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8567328783195027674}
-  - component: {fileID: 8567328783195027676}
   - component: {fileID: 8567328783195027677}
   m_Layer: 0
-  m_Name: FirePoint
+  m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9427,22 +9428,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7364090902365315066}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8567328783195027676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3372244754211678050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c4225c039e6a7e4f88ca01e9901a00e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _firePoint: {fileID: 8567328783195027674}
-  _bulletRepository: {fileID: 8567328783195027677}
-  _force: 10
-  _attackSpeed: 2
 --- !u!114 &8567328783195027677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9582,6 +9567,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _force: 10
   _forceMode: 0
+--- !u!114 &9191928917036377066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176899610585795117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c4225c039e6a7e4f88ca01e9901a00e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _firePoint: {fileID: 8567328783195027674}
+  _bulletRepository: {fileID: 8567328783195027677}
+  _force: 10
+  _attackSpeed: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class BulletRepository : MonoBehaviour
@@ -8,13 +9,7 @@ public class BulletRepository : MonoBehaviour
 
     public Bullet Get(BulletType bulletType)
     {
-        Bullet bullet = null;
-
-        foreach (var item in _bullets)
-        {
-            if(item.Type == bulletType)
-                bullet = item;
-        }
+        Bullet bullet = _bullets.FirstOrDefault(item => item.Type == bulletType);
 
         if (bullet != null)
         {

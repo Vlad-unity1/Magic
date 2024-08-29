@@ -17,9 +17,10 @@ public class Weapon : MonoBehaviour
 
     private Dictionary<int, BulletType> _bulletTypes = new Dictionary<int, BulletType>()
     {
-        {1, BulletType.Fire },
-        {2, BulletType.Ice },
+        {0, BulletType.Fire },
+        {1, BulletType.Ice },
     };
+
     private void Start()
     {
         _currentLvl = GetComponent<PlayerLvlUpgrade>();
