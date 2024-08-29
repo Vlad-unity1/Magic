@@ -7,7 +7,7 @@ public class CrystallExp : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.TryGetComponent(out Player _player))
+        if(collision.gameObject.TryGetComponent(out PlayerLvlUpgrade _player))
         {
             _gameObject.SetActive(false);
             _player._expPlayer += _expCrystall;

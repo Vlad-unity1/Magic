@@ -9,10 +9,10 @@ public class Weapon : MonoBehaviour
     [SerializeField] private BulletRepository _bulletRepository;
     [SerializeField] private float _force;
     [SerializeField] private float _attackSpeed;
-    private Player _playerLvl;
+    private PlayerLvlUpgrade _currentLvl;
     private BulletType _currentBulletType;
     private Bullet _currentBullet;
-    private int level;
+    private int _level;
     private Rigidbody _rb;
 
     private Dictionary<int, BulletType> _bulletTypes = new Dictionary<int, BulletType>()
@@ -22,7 +22,7 @@ public class Weapon : MonoBehaviour
     };
     private void Start()
     {
-        _playerLvl = GetComponent<Player>();
+        _currentLvl = GetComponent<PlayerLvlUpgrade>();
         CheckCurrentBullet();
         StartCoroutine(Attack());
     }
@@ -46,8 +46,8 @@ public class Weapon : MonoBehaviour
 
     internal void CheckCurrentBullet()
     {
-        level = _playerLvl._playerLvl;
-        BulletType bulletType = _bulletTypes[level];
+        _level = _currentLvl._playerLvl;
+        BulletType bulletType = _bulletTypes[_level];
         _currentBulletType = bulletType;
 
         _currentBullet = _bulletRepository.Get(_currentBulletType);
