@@ -6,6 +6,7 @@ public abstract class Bullet : MonoBehaviour
 {
     protected float _damage;
     protected float _timerLive;
+    [field: SerializeField] public BulletType Type { get; private set; }
 
     protected virtual void OnEnable()
     {
@@ -19,4 +20,9 @@ public abstract class Bullet : MonoBehaviour
     }
 
     protected abstract void SetProperties();
+}
+public enum BulletType
+{
+    Fire = 0,
+    Ice = 1,
 }

@@ -1,14 +1,29 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] private BulletSpawner _bulletPrefab;
     [SerializeField] private Transform _firePoint;
+    [SerializeField] private BulletRepository _bulletRepository;
+    [SerializeField] private float _force;
     [SerializeField] private float _attackSpeed;
+    private Player _playerLvl;
+    private BulletType _currentBulletType;
+    private Bullet _currentBullet;
+    private int level;
+    private Rigidbody _rb;
 
+    private Dictionary<int, BulletType> _bulletTypes = new Dictionary<int, BulletType>()
+    {
+        {1, BulletType.Fire },
+        {2, BulletType.Ice },
+    };
     private void Start()
     {
+        _playerLvl = GetComponent<Player>();
+        CheckCurrentBullet();
         StartCoroutine(Attack());
     }
 
@@ -17,8 +32,24 @@ public class Weapon : MonoBehaviour
         WaitForSeconds wait = new WaitForSeconds(_attackSpeed);
         while (true)
         {
-            _bulletPrefab.Cast(_firePoint);
+            Cast(_firePoint);
             yield return wait;
         }
+    }
+
+    public void Cast(Transform firePoint)
+    {
+        var bulletOriginal = Instantiate(_currentBullet, firePoint.position, firePoint.rotation);
+        _rb = bulletOriginal.GetComponent<Rigidbody>();
+        _rb.AddForce(firePoint.transform.forward * _force, ForceMode.Impulse);
+    }
+
+    internal void CheckCurrentBullet()
+    {
+        level = _playerLvl._playerLvl;
+        BulletType bulletType = _bulletTypes[level];
+        _currentBulletType = bulletType;
+
+        _currentBullet = _bulletRepository.Get(_currentBulletType);
     }
 }

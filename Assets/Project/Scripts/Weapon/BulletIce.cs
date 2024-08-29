@@ -1,14 +1,19 @@
 using System.Collections;
 using UnityEngine;
 
-public class BulletIce : Bullet, IAttackStrategy
+public class BulletIce : Bullet
 {
     [SerializeField] private float _iceDamage = 20f;
     [SerializeField] private float _iceTimerLive = 2f;
 
-    public void Attack()
+    private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("Ice");
+        TargetTakeDamage target = collision.GetComponent<TargetTakeDamage>();
+        if (target != null)
+        {
+            target.TakeDamage(_damage);
+        }
+        Destroy(gameObject);
     }
 
     protected override void OnEnable()

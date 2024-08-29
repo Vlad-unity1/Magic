@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class BulletFire : Bullet, IAttackStrategy
+public class BulletFire : Bullet
 {
     [SerializeField] private float _fireDamage = 10f;
     [SerializeField] private float _fireTimerLive = 5f;
@@ -11,6 +11,7 @@ public class BulletFire : Bullet, IAttackStrategy
         SetProperties();
         base.OnEnable();
     }
+
     private void OnTriggerEnter(Collider collision)
     {
         TargetTakeDamage target = collision.GetComponent<TargetTakeDamage>();
@@ -20,14 +21,10 @@ public class BulletFire : Bullet, IAttackStrategy
         }
         Destroy(gameObject);
     }
+
     protected override void SetProperties()
     {
         _damage = _fireDamage;
         _timerLive = _fireTimerLive;
-    }
-
-    public void Attack()
-    {
-        Debug.Log("Fire");
     }
 }
