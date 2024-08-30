@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PlayerLvlUpgrade: MonoBehaviour
 {
-    public int _playerLvl = 0;
-    public int _expPlayer = 0;
+    public int PlayerLvl {  get; private set; }
+    public int ExpPlayer { get; private set; }
     private Weapon _weapon;
 
     private void Start()
@@ -11,14 +11,20 @@ public class PlayerLvlUpgrade: MonoBehaviour
         _weapon = GetComponent<Weapon>();
     }
 
-    private void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        if (_expPlayer == 20)
+        if (other.gameObject.TryGetComponent(out CrystallExp _crystal))
         {
-            _playerLvl = 1;
-            if (_playerLvl >= 1)
+            ExpPlayer += _crystal.Exp;
+            _crystal.OnInteract();
+
+            if (ExpPlayer == 20)
             {
-                _weapon.CheckCurrentBullet();
+                PlayerLvl = 1;
+                if (PlayerLvl >= 1)
+                {
+                    _weapon.CheckCurrentBullet();
+                }
             }
         }
     }

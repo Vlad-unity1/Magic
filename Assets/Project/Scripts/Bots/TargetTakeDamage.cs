@@ -15,6 +15,7 @@ public class TargetTakeDamage : MonoBehaviour
     public void TakeDamage(float damage)
     {
         _currentHealth -= damage;
+        _currentHealth = Mathf.Max(_currentHealth, 0);
         Debug.Log("Current Health: " + _currentHealth);
 
         if (_currentHealth <= 0)

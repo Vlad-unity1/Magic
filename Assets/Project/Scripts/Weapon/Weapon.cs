@@ -1,8 +1,9 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class Weapon : MonoBehaviour
 {
     [SerializeField] private Transform _firePoint;
@@ -13,7 +14,6 @@ public class Weapon : MonoBehaviour
     private BulletType _currentBulletType;
     private Bullet _currentBullet;
     private int _level;
-    private Rigidbody _rb;
 
     private Dictionary<int, BulletType> _bulletTypes = new Dictionary<int, BulletType>()
     {
@@ -30,27 +30,25 @@ public class Weapon : MonoBehaviour
 
     private IEnumerator Attack()
     {
-        WaitForSeconds wait = new WaitForSeconds(_attackSpeed);
+        WaitForSeconds cooldown = new WaitForSeconds(_attackSpeed);
         while (true)
         {
             Cast(_firePoint);
-            yield return wait;
+            yield return cooldown;
         }
     }
 
-    public void Cast(Transform firePoint)
+    private void Cast(Transform firePoint)
     {
         var bulletOriginal = Instantiate(_currentBullet, firePoint.position, firePoint.rotation);
-        _rb = bulletOriginal.GetComponent<Rigidbody>();
-        _rb.AddForce(firePoint.transform.forward * _force, ForceMode.Impulse);
+        bulletOriginal.Run(firePoint.transform.forward * _force);
     }
-
+    
     internal void CheckCurrentBullet()
     {
-        _level = _currentLvl._playerLvl;
+        _level = _currentLvl.PlayerLvl;
         BulletType bulletType = _bulletTypes[_level];
         _currentBulletType = bulletType;
-
         _currentBullet = _bulletRepository.Get(_currentBulletType);
     }
 }

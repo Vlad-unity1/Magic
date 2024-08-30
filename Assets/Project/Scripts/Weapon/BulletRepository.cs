@@ -17,7 +17,7 @@ public class BulletRepository : MonoBehaviour
         }
         else
         {
-            throw new NullReferenceException();
+            throw new NullReferenceException("No bullet Type");
         }
     }
 }

@@ -4939,7 +4939,6 @@ GameObject:
   - component: {fileID: 2913427692528127558}
   - component: {fileID: 7083878961862335653}
   - component: {fileID: 7154183468246759720}
-  - component: {fileID: -1388453842970455171}
   - component: {fileID: -5404873708330521780}
   m_Layer: 6
   m_Name: IceBullet
@@ -5175,20 +5174,6 @@ TrailRenderer:
   m_Autodestruct: 1
   m_Emitting: 1
   m_ApplyActiveColorSpace: 0
---- !u!114 &-1388453842970455171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9172045926504907889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3bb850c7db178d4e9b7ca64c03032f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bulletPrefab: {fileID: 9172045926504907889}
-  _force: 10
 --- !u!114 &-5404873708330521780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5201,6 +5186,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fd704e36cee1884abece5a3967f889e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _iceDamage: 20
-  _iceTimerLive: 2
-  _bulletPrefab: {fileID: 9172045926504907889}
+  _damage: 0
+  _timerLive: 2
+  <Type>k__BackingField: 1

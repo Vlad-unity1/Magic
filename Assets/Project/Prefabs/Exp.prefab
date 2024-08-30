@@ -202,8 +202,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef51c87f3ce639c42b3f1a4f697b5d99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _expCrystall: 5
-  _gameObject: {fileID: 6819932310051032886}
 --- !u!136 &5232258142527066109
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -219,7 +217,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2

@@ -2,11 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public abstract class Bullet : MonoBehaviour
 {
-    protected float _damage;
-    protected float _timerLive;
+    [SerializeField] protected float _damage;
+    [SerializeField] protected float _timerLive;
+    [SerializeField] private Rigidbody _rb;
     [field: SerializeField] public BulletType Type { get; private set; }
+
+    private void Start()
+    {
+        _rb = GetComponent<Rigidbody>();
+    }
 
     protected virtual void OnEnable()
     {
@@ -19,7 +26,10 @@ public abstract class Bullet : MonoBehaviour
         Destroy(gameObject);
     }
 
-    protected abstract void SetProperties();
+    public void Run(Vector3 force)
+    {
+        _rb.AddForce(force, ForceMode.Impulse);
+    }
 }
 public enum BulletType
 {

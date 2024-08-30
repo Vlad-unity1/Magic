@@ -9,18 +9,13 @@ public class TargetMove : MonoBehaviour
     private float _nextUpdate;
     private float _updateRate = 1f;
 
-    private void Start()
-    {
-        _agent = GetComponent<NavMeshAgent>();
-    }
-
     private void Update()
     {
         if (Time.time >= _nextUpdate)
         {
             _nextUpdate = Time.time + _updateRate;
 
-            var distanceToPlayer = Vector3.Distance(_player.transform.position, _agent.transform.position);
+            var distanceToPlayer = Vector3.SqrMagnitude(_player.transform.position - _agent.transform.position);
 
             if (distanceToPlayer > 15)
             {
@@ -40,7 +35,8 @@ public class TargetMove : MonoBehaviour
 
         foreach (var target in _targets)
         {
-            if (target == null) continue;
+            if (target == null) 
+                continue;
 
             var distanceToTarget = Vector3.Distance(_agent.transform.position, target.transform.position);
             if (distanceToTarget < nearestTargetDistance)
@@ -60,6 +56,5 @@ public class TargetMove : MonoBehaviour
     {
         _agent.destination = position;
         Vector3 direction = position - _agent.transform.position;
-        _agent.transform.rotation = Quaternion.LookRotation(direction);
     }
 }

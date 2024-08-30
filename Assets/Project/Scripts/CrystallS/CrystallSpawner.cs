@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+
 public class CrystallSpawner : MonoBehaviour
 {
     private const float MIN_RANGE_X = -27;
