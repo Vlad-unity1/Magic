@@ -5188,4 +5188,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damage: 0
   _timerLive: 2
+  _rb: {fileID: 7083878961862335653}
   <Type>k__BackingField: 1

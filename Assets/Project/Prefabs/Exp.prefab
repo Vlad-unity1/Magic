@@ -43,7 +43,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.02250454, g: 0.3207547, b: 0.0018155664, a: 1}
+  m_Color: {r: 0.45164335, g: 1, b: 0, a: 1}
   m_Intensity: 1
   m_Range: 3
   m_SpotAngle: 30
@@ -202,6 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef51c87f3ce639c42b3f1a4f697b5d99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Exp: 5
 --- !u!136 &5232258142527066109
 CapsuleCollider:
   m_ObjectHideFlags: 0

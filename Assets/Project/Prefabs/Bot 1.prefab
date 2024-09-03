@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6012090756645324540}
   - component: {fileID: 7512457864396534174}
   - component: {fileID: 6328076704920916700}
-  - component: {fileID: 232850632657033315}
   - component: {fileID: 7625720063146982023}
   m_Layer: 0
   m_Name: Bot 1
@@ -100,19 +99,6 @@ MonoBehaviour:
   _targets:
   - {fileID: 0}
   - {fileID: 0}
---- !u!114 &232850632657033315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 967097951266559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3242f5e95e5bc43b02460e69e4ce02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _firePoint: {fileID: 3809120347150194126}
 --- !u!195 &7625720063146982023
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2206,7 +2192,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3809120347150194126}
   - component: {fileID: 521997792763597863}
-  - component: {fileID: 9116101524523773204}
   m_Layer: 0
   m_Name: FirePointBot
   m_TagString: Untagged
@@ -2241,23 +2226,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c4225c039e6a7e4f88ca01e9901a00e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bulletPrefab: {fileID: 9116101524523773204}
   _firePoint: {fileID: 3809120347150194126}
+  _bulletRepository: {fileID: 0}
+  _force: 0
   _attackSpeed: 1
---- !u!114 &9116101524523773204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7171190528533454212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3bb850c7db178d4e9b7ca64c03032f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bulletPrefab: {fileID: 9172045926504907889, guid: 4e6c4f15012246b448efa4a69bf19a1f, type: 3}
-  _force: 10
 --- !u!1 &7294898621813402170
 GameObject:
   m_ObjectHideFlags: 0

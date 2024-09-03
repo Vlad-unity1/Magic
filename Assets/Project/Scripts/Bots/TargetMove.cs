@@ -17,7 +17,7 @@ public class TargetMove : MonoBehaviour
 
             var distanceToPlayer = Vector3.SqrMagnitude(_player.transform.position - _agent.transform.position);
 
-            if (distanceToPlayer > 15)
+            if (distanceToPlayer > 15 * 15)
             {
                 MoveToNearestTarget();
             }
@@ -56,5 +56,6 @@ public class TargetMove : MonoBehaviour
     {
         _agent.destination = position;
         Vector3 direction = position - _agent.transform.position;
+        _agent.transform.rotation = Quaternion.LookRotation(direction);
     }
 }
