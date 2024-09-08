@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,7 +17,6 @@ public class TargetTakeDamage : MonoBehaviour
     {
         _currentHealth -= damage;
         _currentHealth = Mathf.Max(_currentHealth, 0);
-        Debug.Log("Current Health: " + _currentHealth);
 
         if (_currentHealth <= 0)
         {

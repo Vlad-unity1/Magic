@@ -10,6 +10,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] private BulletRepository _bulletRepository;
     [SerializeField] private float _force;
     [SerializeField] private float _attackSpeed;
+    [SerializeField] private PlayerAnimation _playerAnimation;
     private PlayerLvlUpgrade _currentLvl;
     private BulletType _currentBulletType;
     private Bullet _currentBullet;
@@ -33,6 +34,8 @@ public class Weapon : MonoBehaviour
         WaitForSeconds cooldown = new WaitForSeconds(_attackSpeed);
         while (true)
         {
+            _playerAnimation.OnPlayerAttack();
+            yield return new WaitForSeconds(0.25f);
             Cast(_firePoint);
             yield return cooldown;
         }

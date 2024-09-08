@@ -1,11 +1,13 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 
 public class TargetMove : MonoBehaviour
 {
     [SerializeField] private PlayerMovement _player;
+    [SerializeField] private PlayerTakeDamage _playerTakeDamage;
     [SerializeField] private NavMeshAgent _agent;
     [SerializeField] private GameObject[] _targets;
+    [SerializeField] private BotsAnimation _botAnimation;
     private float _nextUpdate;
     private float _updateRate = 1f;
 
@@ -14,18 +16,25 @@ public class TargetMove : MonoBehaviour
         if (Time.time >= _nextUpdate)
         {
             _nextUpdate = Time.time + _updateRate;
-
-            var distanceToPlayer = Vector3.SqrMagnitude(_player.transform.position - _agent.transform.position);
-
-            if (distanceToPlayer > 15 * 15)
+            if (_playerTakeDamage._currentHealth <= 0)
             {
                 MoveToNearestTarget();
             }
             else
             {
-                MoveToPosition(_player.transform.position);
+                var distanceToPlayer = Vector3.SqrMagnitude(_player.transform.position - _agent.transform.position);
+
+                if (distanceToPlayer > 15 * 15)
+                {
+                    MoveToNearestTarget();
+                }
+                else
+                {
+                    MoveToPosition(_player.transform.position);
+                }
             }
         }
+        UpdateBotAnimation();
     }
 
     private void MoveToNearestTarget()
@@ -57,5 +66,17 @@ public class TargetMove : MonoBehaviour
         _agent.destination = position;
         Vector3 direction = position - _agent.transform.position;
         _agent.transform.rotation = Quaternion.LookRotation(direction);
+    }
+
+    private void UpdateBotAnimation()
+    {
+        if (_agent.velocity.sqrMagnitude > 0.1f) 
+        {
+            _botAnimation.OnBotMove(); 
+        }
+        else
+        {
+            _botAnimation.OnBotStop();
+        }
     }
 }

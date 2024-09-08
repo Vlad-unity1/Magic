@@ -9,6 +9,7 @@ public class TargetWeapon : MonoBehaviour
     [SerializeField] private BulletRepository _bulletRepository;
     [SerializeField] private float _force;
     [SerializeField] private float _attackSpeed;
+    [SerializeField] private BotsAnimation _botAnimation;
     private BulletType _currentBulletType;
     private Bullet _currentBullet;
     private Coroutine _routine;
@@ -21,7 +22,6 @@ public class TargetWeapon : MonoBehaviour
         {1, BulletType.Ice },
     };
     
-
     private void Start()
     {
         CheckCurrentBullet();
@@ -33,6 +33,8 @@ public class TargetWeapon : MonoBehaviour
         WaitForSeconds cooldown = new WaitForSeconds(_attackSpeed);
         while (true)
         {
+            _botAnimation.OnBotAttack();
+            yield return new WaitForSeconds(0.25f);
             Cast(_firePoint);
             yield return cooldown;
         }
@@ -42,10 +44,10 @@ public class TargetWeapon : MonoBehaviour
     {
         var bulletOriginal = Instantiate(_currentBullet, firePoint.position, firePoint.rotation);
         bulletOriginal.Run(firePoint.transform.forward * _force);
-        if (bulletOriginal is BulletEnemy bulletEnemy)
-        {
-            bulletEnemy.SetWeapon(this);
-        }
+        //if (bulletOriginal is BulletEnemy bulletEnemy)
+        //{
+        //    bulletEnemy.SetWeapon(this);
+        //}
     }
 
     public void UpdateBotsBullet()
@@ -64,7 +66,7 @@ public class TargetWeapon : MonoBehaviour
         }
         else
         {
-            Debug.Log("Уровень достиг максимума. Не увеличиваем.");
+            Debug.Log($"Max lvl");
         }
     }
 

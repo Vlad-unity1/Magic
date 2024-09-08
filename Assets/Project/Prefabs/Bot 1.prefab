@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7512457864396534174}
   - component: {fileID: 6328076704920916700}
   - component: {fileID: 7625720063146982023}
+  - component: {fileID: 8117878053756202415}
+  - component: {fileID: 3659208845955267541}
   m_Layer: 0
   m_Name: Bot 1
   m_TagString: Untagged
@@ -48,7 +50,7 @@ Animator:
   m_GameObject: {fileID: 967097951266559}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: bed7a092d53e7c748bd65db98cebf9d6, type: 3}
-  m_Controller: {fileID: 9100000, guid: 2890c9060ce4f6b45b4082d87f47b27e, type: 2}
+  m_Controller: {fileID: 9100000, guid: f696886fcd5e2f94899d81ef38d45419, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -78,10 +80,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.3072609
+  m_Radius: 0.5533333
   m_Height: 1.882848
   m_Direction: 1
-  m_Center: {x: 0, y: 0.98, z: 0}
+  m_Center: {x: 0, y: 0.98, z: -0.038784027}
 --- !u!114 &6328076704920916700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,6 +101,7 @@ MonoBehaviour:
   _targets:
   - {fileID: 0}
   - {fileID: 0}
+  _botAnimation: {fileID: 3659208845955267541}
 --- !u!195 &7625720063146982023
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -121,6 +124,32 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &8117878053756202415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967097951266559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3eca02aee3e0f44f89f9a3f11dbe021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 100
+--- !u!114 &3659208845955267541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967097951266559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183114efdb746b144b456022dd901312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 6012090756645324540}
 --- !u!1 &27345141670065008
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,7 +2220,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3809120347150194126}
-  - component: {fileID: 521997792763597863}
+  - component: {fileID: 4359577932067634746}
+  - component: {fileID: 5216978721031556279}
   m_Layer: 0
   m_Name: FirePointBot
   m_TagString: Untagged
@@ -2208,13 +2238,13 @@ Transform:
   m_GameObject: {fileID: 7171190528533454212}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.949, z: 0.618}
+  m_LocalPosition: {x: 0.81, y: 1.116, z: 1.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9106475777885185484}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &521997792763597863
+--- !u!114 &4359577932067634746
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2223,13 +2253,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 7171190528533454212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c4225c039e6a7e4f88ca01e9901a00e, type: 3}
+  m_Script: {fileID: 11500000, guid: ad6c735942f567046aa000ed1e81e011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bullets:
+  - {fileID: -543006555673255774, guid: 4e6c4f15012246b448efa4a69bf19a1f, type: 3}
+  - {fileID: -543006555673255774, guid: 6a6900d259b649542ad4cddda114bd02, type: 3}
+--- !u!114 &5216978721031556279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7171190528533454212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6edd8d84186a444596f04a1eee4927d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _firePoint: {fileID: 3809120347150194126}
-  _bulletRepository: {fileID: 0}
-  _force: 0
-  _attackSpeed: 1
+  _bulletRepository: {fileID: 4359577932067634746}
+  _force: 12
+  _attackSpeed: 2
+  _botAnimation: {fileID: 3659208845955267541}
 --- !u!1 &7294898621813402170
 GameObject:
   m_ObjectHideFlags: 0

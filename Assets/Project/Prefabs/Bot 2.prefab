@@ -799,6 +799,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9122798156051474340}
+  - component: {fileID: 6979265302257923231}
+  - component: {fileID: 1115023648777941758}
   m_Layer: 0
   m_Name: FirePointBot
   m_TagString: Untagged
@@ -815,12 +817,44 @@ Transform:
   m_GameObject: {fileID: 2704576530795158633}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.949, z: 0.618}
+  m_LocalPosition: {x: 0.968, y: 1.205, z: 1.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8712510814912619885}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6979265302257923231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2704576530795158633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad6c735942f567046aa000ed1e81e011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bullets:
+  - {fileID: -543006555673255774, guid: 4e6c4f15012246b448efa4a69bf19a1f, type: 3}
+  - {fileID: -543006555673255774, guid: 6a6900d259b649542ad4cddda114bd02, type: 3}
+--- !u!114 &1115023648777941758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2704576530795158633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6edd8d84186a444596f04a1eee4927d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _firePoint: {fileID: 9122798156051474340}
+  _bulletRepository: {fileID: 6979265302257923231}
+  _force: 10
+  _attackSpeed: 2
+  _botAnimation: {fileID: 0}
 --- !u!1 &2726687011770718311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,6 +1350,7 @@ GameObject:
   - component: {fileID: 7495692700626806860}
   - component: {fileID: 8149962849788695260}
   - component: {fileID: 1732709743146801390}
+  - component: {fileID: 725590942044648723}
   m_Layer: 0
   m_Name: Bot 2
   m_TagString: Untagged
@@ -1351,7 +1386,7 @@ Animator:
   m_GameObject: {fileID: 4509539057587510296}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: bed7a092d53e7c748bd65db98cebf9d6, type: 3}
-  m_Controller: {fileID: 9100000, guid: 2890c9060ce4f6b45b4082d87f47b27e, type: 2}
+  m_Controller: {fileID: 9100000, guid: f696886fcd5e2f94899d81ef38d45419, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1381,10 +1416,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.3072609
+  m_Radius: 0.52957916
   m_Height: 1.882848
   m_Direction: 1
-  m_Center: {x: 0, y: 0.98, z: 0}
+  m_Center: {x: 0, y: 0.98, z: 0.044808388}
 --- !u!114 &7495692700626806860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1402,6 +1437,7 @@ MonoBehaviour:
   _targets:
   - {fileID: 0}
   - {fileID: 0}
+  _botAnimation: {fileID: 725590942044648723}
 --- !u!195 &8149962849788695260
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1436,7 +1472,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3eca02aee3e0f44f89f9a3f11dbe021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 10
+  _health: 150
+--- !u!114 &725590942044648723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4509539057587510296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183114efdb746b144b456022dd901312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 8561891061195821136}
 --- !u!1 &4927367881451386710
 GameObject:
   m_ObjectHideFlags: 0

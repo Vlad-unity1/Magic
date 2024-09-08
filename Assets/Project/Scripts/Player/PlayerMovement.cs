@@ -4,6 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float _speed = 5f;
     [SerializeField] private float _rotationSpeed = 720f;
+    [SerializeField] private PlayerAnimation _playerAnimation;
 
     internal void Move(Vector2 direction)
     {
@@ -14,6 +15,12 @@ public class PlayerMovement : MonoBehaviour
             transform.position += movement;
             Quaternion targetRotation = Quaternion.LookRotation(movement, Vector3.up);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
+
+            _playerAnimation.OnPlayerMove();
+        }
+        else
+        {
+            _playerAnimation.OnPlayerStop();
         }
     }
 }
