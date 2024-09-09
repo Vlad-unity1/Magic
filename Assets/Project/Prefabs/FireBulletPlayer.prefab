@@ -19114,8 +19114,9 @@ MonoBehaviour:
   _timerLive: 5
   _rb: {fileID: 7083878961862335653}
   <Type>k__BackingField: 0
-  explosionRadius: 7
-  aoeDamage: 20
+  _explosionRadius: 5
+  _aoeDamage: 20
+  _periodicalDamage: 2
 --- !u!114 &5248872021518214358
 MonoBehaviour:
   m_ObjectHideFlags: 0

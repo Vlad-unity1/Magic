@@ -28,11 +28,17 @@ public class FireBulletObserver : MonoBehaviour
         Destroy(spawnParticles.gameObject, 5f);
     }
 
-    public void FireEffectRoutine(Vector3 position)
+    private IEnumerator FireEffectRoutineCoroutine(Vector3 position)
     {
         var spawnParticles = Instantiate(_explosionParticles[3], position, Quaternion.identity);
         spawnParticles.Play();
+        yield return new WaitForSeconds(5f);
         Destroy(spawnParticles.gameObject, 5f);
+    }
+
+    public void FireEffectRoutine(Vector3 position)
+    {
+        StartCoroutine(FireEffectRoutineCoroutine(position));
     }
 
     public void PlayLightningEffectOnTarget(Vector3 position)

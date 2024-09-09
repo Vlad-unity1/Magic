@@ -6,8 +6,8 @@ public class BulletEnemy : Bullet
 {
     private TargetWeapon _weapon;
     private FireBulletObserver _particleSystem;
-    [SerializeField] private float explosionRadius;
-    [SerializeField] private float aoeDamage;
+    [SerializeField] private float _explosionRadius;
+    [SerializeField] private float _aoeDamage;
 
     private void Start()
     {
@@ -43,7 +43,7 @@ public class BulletEnemy : Bullet
     {
         _particleSystem.OnExplosionPlayFire(transform.position);
 
-        Collider[] hitColliders = Physics.OverlapSphere(transform.position, explosionRadius);
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, _explosionRadius);
 
         foreach (Collider hitCollider in hitColliders)
         {
@@ -52,13 +52,13 @@ public class BulletEnemy : Bullet
 
             if (hitCollider.TryGetComponent(out TargetTakeDamage target))
             {
-                target.TakeDamage(aoeDamage);
+                target.TakeDamage(_aoeDamage);
                 _particleSystem.FireEffectRoutine(hitCollider.transform.position);
                 // Debug.Log($"Нанесено {aoeDamage} AOE урона таргету : {target.name}"); // дебаги для проверки работает ли как надо. Надо сдвигать ботов вместе, отключая TargetWeapon. 
             }
             else if (hitCollider.TryGetComponent(out PlayerTakeDamage player))
             {
-                player.TakeDamage(aoeDamage);
+                player.TakeDamage(_aoeDamage);
                 //Debug.Log($"Нанесено {aoeDamage} AOE урона игроку: {player.name}");
             }
         }
