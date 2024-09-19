@@ -9704,7 +9704,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2276018283585597688}
   serializedVersion: 8
-  lengthInSec: 2
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 3
@@ -19386,8 +19386,8 @@ GameObject:
   - component: {fileID: 1136793678967138104}
   - component: {fileID: 2913427692528127558}
   - component: {fileID: 7083878961862335653}
-  - component: {fileID: -4591097916763947387}
   - component: {fileID: -4557114778880946371}
+  - component: {fileID: 156964470529946950}
   m_Layer: 6
   m_Name: BulletLightningPlayer
   m_TagString: Untagged
@@ -19509,24 +19509,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-4591097916763947387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9172045926504907889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fd704e36cee1884abece5a3967f889e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _damage: 3
-  _timerLive: 3
-  _rb: {fileID: 7083878961862335653}
-  <Type>k__BackingField: 1
-  explosionRadius: 10
-  aoeDamage: 30
 --- !u!114 &-4557114778880946371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19542,5 +19524,19 @@ MonoBehaviour:
   _explosionParticles:
   - {fileID: 587251737601841848, guid: a2e67ed5b5e3da749a92e5abb84dab53, type: 3}
   - {fileID: 1132205505141812673, guid: 9a41a95492dff64428f43bf50adfcfa5, type: 3}
-  - {fileID: 1132205505141812673, guid: 9a41a95492dff64428f43bf50adfcfa5, type: 3}
-  - {fileID: 1905116393358995928, guid: 6bc1a39e1e661d54788f13b19296157e, type: 3}
+--- !u!114 &156964470529946950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9172045926504907889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8638e6990071bb4299a5f25bc966daa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TimerLive>k__BackingField: 4
+  _rb: {fileID: 7083878961862335653}
+  damage: 5
+  radius: 10

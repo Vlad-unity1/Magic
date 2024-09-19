@@ -8,5 +8,4 @@ public class CrystallExp : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
 }

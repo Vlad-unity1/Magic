@@ -1,31 +1,39 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerLvlUpgrade: MonoBehaviour
 {
-    public int PlayerLvl {  get; private set; }
     public int ExpPlayer { get; private set; }
-    private Weapon _weapon;
+    public BulletManager bulletManager;
+    public int level;
 
     private void Start()
     {
-        _weapon = GetComponent<Weapon>();
+        bulletManager = GetComponent<BulletManager>();
+        level = 0;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.TryGetComponent(out CrystallExp _crystal))
         {
+            bulletManager.SetBulletByLevel(level);
             ExpPlayer += _crystal.Exp;
             _crystal.OnInteract();
 
             if (ExpPlayer == 20)
             {
-                PlayerLvl = 1;
-                if (PlayerLvl >= 1)
+                level = 1;
+                if (level >= 1)
                 {
-                    _weapon.CheckCurrentBullet();
+                    LevelUp();
                 }
             }
         }
+    }
+
+    public void LevelUp()
+    {
+        Debug.Log($"Текущий: {level}");
+        bulletManager.SetBulletByLevel(level);
     }
 }

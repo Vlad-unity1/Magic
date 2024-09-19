@@ -28,4 +28,13 @@ public class TargetTakeDamage : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    private void OnTriggerEnter(Collider bulletCollider)
+    {
+        Bullet bullet = bulletCollider.gameObject.GetComponent<Bullet>();
+        if (bullet != null)
+        {
+            bullet.OnHitEnemy(this);
+            Destroy(bulletCollider.gameObject);
+        }
+    }
 }

@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerTakeDamage : MonoBehaviour
+public class Health : MonoBehaviour
 {
     [SerializeField] private float _health = 10;
     public float _currentHealth;

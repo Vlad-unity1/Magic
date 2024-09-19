@@ -1951,7 +1951,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6979265302257923231, guid: f07dbdc0c372c1a419c358460933cfc1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2362,7 +2363,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4359577932067634746, guid: fc1b25086acc6364099a88eb9e9803c4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3956,7 +3958,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6979265302257923231, guid: f07dbdc0c372c1a419c358460933cfc1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6337,7 +6340,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6979265302257923231, guid: f07dbdc0c372c1a419c358460933cfc1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7178,7 +7182,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2086744939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7211,7 +7215,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -7597,9 +7601,9 @@ GameObject:
   - component: {fileID: 657765491447519400}
   - component: {fileID: 9191928917036377065}
   - component: {fileID: 9191928917036377066}
-  - component: {fileID: 9191928917036377067}
   - component: {fileID: 9191928917036377068}
   - component: {fileID: 9191928917036377069}
+  - component: {fileID: 9191928917036377070}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -7717,6 +7721,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e439eb03eb5edf40acd79d0721fdade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletManager: {fileID: 9191928917036377070}
+  level: 0
 --- !u!1 &672431952355470658
 GameObject:
   m_ObjectHideFlags: 0
@@ -8548,7 +8554,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4359577932067634746, guid: fc1b25086acc6364099a88eb9e9803c4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10214,7 +10221,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6979265302257923231, guid: f07dbdc0c372c1a419c358460933cfc1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10826,25 +10834,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _firePoint: {fileID: 8567328783195027674}
-  _bulletRepository: {fileID: 9191928917036377067}
   _force: 10
   _attackSpeed: 2
   _playerAnimation: {fileID: 9191928917036377068}
---- !u!114 &9191928917036377067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176899610585795117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad6c735942f567046aa000ed1e81e011, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bullets:
-  - {fileID: -1113146336587018327, guid: 152bde052a7d27a42b3dcb650f78e90d, type: 3}
-  - {fileID: -4591097916763947387, guid: 852058f813727da468a389ed263b0a18, type: 3}
+  _currentBullet: {fileID: -987260613815630733, guid: 986ec15e6f2c5674c9ad25f9ee8266b3, type: 3}
+  bulletManager: {fileID: 9191928917036377070}
 --- !u!114 &9191928917036377068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10872,6 +10866,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 100
   _currentHealth: 0
+--- !u!114 &9191928917036377070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176899610585795117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9551b48be2a8d3a4eb99a73a9e48b914, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletLevels:
+  - level: 0
+    bulletPrefab: {fileID: -987260613815630733, guid: 986ec15e6f2c5674c9ad25f9ee8266b3, type: 3}
+  - level: 1
+    bulletPrefab: {fileID: -1481195363260565432, guid: 152bde052a7d27a42b3dcb650f78e90d, type: 3}
+  - level: 2
+    bulletPrefab: {fileID: 156964470529946950, guid: 852058f813727da468a389ed263b0a18, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

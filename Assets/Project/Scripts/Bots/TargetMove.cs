@@ -5,7 +5,7 @@ using UnityEngine.AI;
 public class TargetMove : MonoBehaviour
 {
     [SerializeField] private PlayerMovement _player;
-    [SerializeField] private PlayerTakeDamage _playerTakeDamage;
+    [SerializeField] private Health _playerTakeDamage;
     [SerializeField] private NavMeshAgent _agent;
     [SerializeField] private GameObject[] _targets;
     [SerializeField] private BotsAnimation _botAnimation;

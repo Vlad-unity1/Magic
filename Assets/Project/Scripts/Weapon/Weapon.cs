@@ -1,34 +1,26 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 
 
 public class Weapon : MonoBehaviour
 {
     [SerializeField] private Transform _firePoint;
-    [SerializeField] private BulletRepository _bulletRepository;
     [SerializeField] private float _force;
     [SerializeField] private float _attackSpeed;
     [SerializeField] private PlayerAnimation _playerAnimation;
-    private PlayerLvlUpgrade _currentLvl;
-    private BulletType _currentBulletType;
-    private Bullet _currentBullet;
-    private int _level;
-
-    private Dictionary<int, BulletType> _bulletTypes = new Dictionary<int, BulletType>()
-    {
-        {0, BulletType.Fire },
-        {1, BulletType.Ice },
-    };
+    [SerializeField] private Bullet _currentBullet;
+    [SerializeField] private BulletManager bulletManager;
+    private PlayerLvlUpgrade _playerLvlUpgrade;
 
     private void Start()
     {
-        _currentLvl = GetComponent<PlayerLvlUpgrade>();
-        CheckCurrentBullet();
+        _playerLvlUpgrade = GetComponent<PlayerLvlUpgrade>();
         StartCoroutine(Attack());
     }
-
+    private void Update()
+    {
+        bulletManager.SetBulletByLevel(_playerLvlUpgrade.level);     
+    }
     private IEnumerator Attack()
     {
         WaitForSeconds cooldown = new WaitForSeconds(_attackSpeed);
@@ -43,15 +35,10 @@ public class Weapon : MonoBehaviour
 
     private void Cast(Transform firePoint)
     {
-        var bulletOriginal = Instantiate(_currentBullet, firePoint.position, firePoint.rotation);
-        bulletOriginal.Run(firePoint.transform.forward * _force);
-    }
-    
-    internal void CheckCurrentBullet()
-    {
-        _level = _currentLvl.PlayerLvl;
-        BulletType bulletType = _bulletTypes[_level];
-        _currentBulletType = bulletType;
-        _currentBullet = _bulletRepository.Get(_currentBulletType);
+        _currentBullet = bulletManager.GetCurrentBullet();
+        var bulletInstance = Instantiate(_currentBullet, firePoint.position, firePoint.rotation);
+        bulletInstance.Run(firePoint.transform.forward * _force);
+        bulletInstance.damage = _currentBullet.damage;
+        bulletInstance.radius = _currentBullet.radius;
     }
 }

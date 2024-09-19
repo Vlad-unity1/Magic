@@ -1,30 +1,20 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 
 public class TargetWeapon : MonoBehaviour
 {
     [SerializeField] private Transform _firePoint;
-    [SerializeField] private BulletRepository _bulletRepository;
     [SerializeField] private float _force;
     [SerializeField] private float _attackSpeed;
     [SerializeField] private BotsAnimation _botAnimation;
-    private BulletType _currentBulletType;
     private Bullet _currentBullet;
     private Coroutine _routine;
     private int _level = 0;
     private int _lvlMax = 1;
 
-    private Dictionary<int, BulletType> _bulletTypes = new Dictionary<int, BulletType>()
-    {
-        {0, BulletType.Fire },
-        {1, BulletType.Ice },
-    };
     
     private void Start()
     {
-        CheckCurrentBullet();
         StartCoroutine(Attack());
     }
 
@@ -44,10 +34,6 @@ public class TargetWeapon : MonoBehaviour
     {
         var bulletOriginal = Instantiate(_currentBullet, firePoint.position, firePoint.rotation);
         bulletOriginal.Run(firePoint.transform.forward * _force);
-        //if (bulletOriginal is BulletEnemy bulletEnemy)
-        //{
-        //    bulletEnemy.SetWeapon(this);
-        //}
     }
 
     public void UpdateBotsBullet()
@@ -62,18 +48,10 @@ public class TargetWeapon : MonoBehaviour
         {
             _level++;
             Debug.Log($"Уровень увеличен: {_level}");
-            CheckCurrentBullet();
         }
         else
         {
             Debug.Log($"Max lvl");
         }
-    }
-
-    internal void CheckCurrentBullet()
-    {
-        BulletType bulletType = _bulletTypes[_level];
-        _currentBulletType = bulletType;
-        _currentBullet = _bulletRepository.Get(_currentBulletType);
     }
 }
